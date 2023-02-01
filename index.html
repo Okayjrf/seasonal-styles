@@ -16,7 +16,7 @@
     }
 
     #logo{
-        float:right;
+        float: right;
         display:inline-block;
         padding:2px;
         max-width:100px; /* actual size of image */
@@ -24,7 +24,7 @@
     }
   
     #wear {
-        float:left;
+        float: left;
         display:inline-block;
         padding:20px;
         max-width:300px; /* actual size of image */
@@ -32,58 +32,79 @@
     }
 
     ul.colors{
-	display:inline-block;
-	margin-left:5%;
+	    display:inline-block;
+	    margin-left:5%;
 }
+    #seasonHeader h3{
+
+    }
+    #seasonText p{
+
+    }
+
+    #seasonColor p{
+
+    }
+
+    #dateForm {
+        text-align: center;
+
+    }
+
+    #dateField {
+        text-align: center;
+    }
+
+    .seasons a{
+
+    }
   </style>
  </head>
  <body>
 	<header role="banner">
+        <p>
+            <form id="dateForm">
+            <label for="dateField">
+                <b>Input Date:</b><input type="text" name="dateField" id="dateField" />
+            </label>
+                <input type="submit" value="Submit" />
+            </form>
+        </p>
 	    <img src="images/four-seasons.gif" alt="Seasonal Logo Goes Here" class="flexible" id="logo" />
-		<h1 class="masthead">Eddie Browser</h1>
+		<h1 class="masthead">Seasonal Styles</h1>
 		<nav>
 			<ul>
 				<li class="seasons"><a href="Default">Default</a></li>
 				<li class="seasons"><a href="Spring">Spring</a></li>
 				<li class="seasons"><a href="Summer">Summer</a></li>
-				<li class="seasons"><a href="Fall">Fall</a></li>
+				<li class="seasons"><a href="Autumn">Autumn</a></li>
 				<li class="seasons"><a href="Winter">Winter</a></li>
 			</ul>
 		</nav>
 	</header>
      
    <main class="wrapper">
-    <header><h3>Outfitter for All Seasons!</h3></header>
-    <p>
-    The colors of the seasonal images are as follows:
-        <ul class="colors">
-            <li>Spring: <b>#2B7129</b></li>
-            <li>Summer: <b>#EBA52B</b></li>
-            <li>Fall: <b>#A81124</b></li>
-            <li>Winter: <b>#005393</b></li>
-        </ul>
+    <header id="seasonHeader">
+        <h3>This is Default!</h3>
+    </header>
+    <p id="seasonColor">
+     The color of the images are as follows: <br/><small>Default: <b>#382c52</b></small>
     </p>
-    <p>
-    Aesthetic gentrify YOLO McSweeney's typewriter single-origin coffee. Slow-carb hella listicle lomo, Helvetica single-origin coffee butcher stumptown. Chambray try-hard church-key mumblecore, tote bag PBR cardigan. Retro Austin Brooklyn, blog Intelligentsia gentrify jean shorts sartorial bicycle rights gastropub. Aesthetic wayfarers Pitchfork, tattooed Carles quinoa meh leggings distillery pork belly banjo. Umami cred lumbersexual skateboard, pork belly Tumblr vegan letterpress. Fixie bicycle rights butcher chillwave, gluten-free health goth Echo Park locavore whatever.
-    <img src="images/300x400.png" alt="Season Wear Goes Here" id="wear" />
-    </p>
-    <p>
-    Gluten-free selfies normcore chillwave. Listicle 90's chambray, seitan cold-pressed try-hard Etsy authentic flexitarian vinyl. Meditation bespoke freegan, single-origin coffee cred seitan 90's gentrify brunch Williamsburg squid cold-pressed. Brooklyn readymade Tumblr wayfarers ethical. Biodiesel VHS Godard High Life, tousled Banksy craft beer. Mlkshk direct trade locavore, mumblecore keytar artisan hashtag fap. Cred cronut Brooklyn, locavore art party small batch PBR semiotics ennui kitsch taxidermy mlkshk stumptown.
-    </p>
-    <p>
-    Polaroid iPhone plaid, Pitchfork Shoreditch paleo. Hashtag keytar chia scenester Pinterest, semiotics tousled food truck. YOLO scenester deep v, taxidermy paleo quinoa McSweeney's Carles VHS mustache Williamsburg gluten-free readymade cold-pressed. Truffaut Thundercats Schlitz, listicle organic Brooklyn paleo squid asymmetrical readymade migas gluten-free Austin. Etsy Wes Anderson 8-bit retro, polaroid synth paleo banh mi before they sold out Vice. Bushwick fap Intelligentsia, whatever Etsy High Life Kickstarter migas retro Banksy YOLO Carles yr raw denim. Gluten-free fixie taxidermy pop-up, actually Kickstarter flannel put a bird on it master cleanse.
-    </p>
-    <p>
-    Text provided by <a href="http://hipsum.co/" target="_blank">Hipster Ipsum</a>
+
+    <p> <img src="images/sleep.png" alt="Season Wear Goes Here" id="wear" /> </p>
+
+    <p id="seasonText"> This webpage was created using HTML, CSS, JS, and jQuery. It changes to the desired season page by clicking on the links above or by inputting a date above. This is the default webpage. Here you'll see the default style, which is sleep wear. Sleep wear could be anything, but the most basic sleep wear will be the pajamas which is shown here. Hope you enjoy exploring my webpage!
     </p>
     <footer>
-    <p><small>&copy; 2021 by 
-        YOUR NAME HERE, All Rights Reserved ~ 
+    <p><small>&copy; 2021-<span id="this-year"></span> by JR Fernandez, All Rights Reserved ~ <br>
         <a id="html-checker" href="#">Check HTML</a> ~ 
-        <a id="css-checker" href="#">Check CSS</a></small>
+        <a id="css-checker" href="#">Check CSS</a>
+        <br>Text provided by <a href="http://hipsum.co/" target="_blank">Hipster Ipsum</a></small>
+
     </p>
     </footer>
   </main>
   <script src="js/main.js"></script>
+  <script src="js/seasonal-styles.js"></script>
   </body>
 </html>

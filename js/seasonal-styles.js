@@ -46,7 +46,7 @@ $("document").ready(function(){
          $("#wear").attr("src", "images/sleep.png");
          $("html").css("backgroundColor","#382c52");
          $("header#seasonHeader h3").text("This is Default!");
-         $("p#seasonText").html("This webpage was created using HTML, CSS, JS, and jQuery. It changes to the desired season page by clicking on the links above. This is the default webpage. Here you'll see the default style, which is sleep wear. Sleep wear could be anything, but the most basic sleep wear will be the pajamas which is shown here. Hope you enjoy exploring my webpage!")
+         $("p#seasonText").html("This webpage was created using HTML, CSS, JS, and jQuery. It changes to the desired season page by clicking on the links above or by inputting a date above. This is the default webpage. Here you'll see the default style, which is sleep wear. Sleep wear could be anything, but the most basic sleep wear will be the pajamas which is shown here. Hope you enjoy exploring my webpage!")
          $("p#seasonColor").html("The color of the images are as follows: <br/><small>Default: <b>#382c52</b></small>");
 
          break;
